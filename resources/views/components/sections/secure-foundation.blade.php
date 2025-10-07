@@ -1,4 +1,4 @@
-<section class="relative py-10 transition-colors duration-300">
+<section class="relative py-2 transition-colors duration-300">
   <!-- Soft Diagonal Cross Grid Left Fade Background -->
   <div
     class="absolute inset-0 pointer-events-none hidden sm:block"
@@ -13,7 +13,7 @@
     "
   ></div>
 
-  <div class="relative container mx-auto px-4 max-w-6xl">
+  <div class="relative container mx-auto px-4 max-w-7xl">
     <div class="grid lg:grid-cols-2 gap-10 items-center">
 
       <!-- Image Column -->

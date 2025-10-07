@@ -1,5 +1,5 @@
-<section class="py-12 md:py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
-    <div class="container mx-auto px-4 max-w-6xl">
+<section class="py-5 md:py-10 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div class="container mx-auto px-4 max-w-7xl">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
 
             <!-- Content Column -->
