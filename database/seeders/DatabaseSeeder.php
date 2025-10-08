@@ -20,5 +20,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'argi@company.com',
             'password' => 'argiargi'
         ]);
+
+        $this->call([
+            OurWorkSeeder::class,
+        ]);
     }
 }

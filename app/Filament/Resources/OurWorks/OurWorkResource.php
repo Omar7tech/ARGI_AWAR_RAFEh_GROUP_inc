@@ -13,6 +13,7 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 
 class OurWorkResource extends Resource
 {
@@ -41,8 +42,12 @@ class OurWorkResource extends Resource
     {
         return [
             'index' => ListOurWorks::route('/'),
-            'create' => CreateOurWork::route('/create'),
             'edit' => EditOurWork::route('/{record}/edit'),
         ];
+    }
+
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()->withoutGlobalScopes();
     }
 }

@@ -15,13 +15,13 @@ class OurWorkForm
                 TextInput::make('title'),
                 TextInput::make('description'),
                 SpatieMediaLibraryFileUpload::make('image')
+                    ->required()
                     ->label('Upload Images')
                     ->disk('public')
                     ->visibility('public')
                     ->directory('ourworks')
                     ->image()
                     ->downloadable()
-                    ->collection('ourworks')
                     ->openable()
                     ->imageEditor()
                     ->imageEditorAspectRatios([
