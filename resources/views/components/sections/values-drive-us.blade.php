@@ -1,40 +1,42 @@
-<section class="py-10 md:py-16 bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+<section class="py-8 md:py-12 bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
 
     <div class="container mx-auto px-4 max-w-7xl">
 
-        <!-- Header: Tighter spacing -->
-        <div class="text-center mb-8">
-            <p class="text-lg font-semibold text-teal-500 dark:text-cyan-400 mb-2">Our Foundation</p>
+        <!-- Header: Tighter spacing (mb-6) and slightly refined text -->
+        <div class="text-center mb-6">
+            <p class="text-base font-semibold text-teal-500 dark:text-cyan-400 mb-1">Our Foundation</p>
             <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-cyan-500">Values</span> That Drive Us
             </h2>
         </div>
 
-        <!-- Enhanced Card for Text Content: Thinner border (p-px) and softer shadow (shadow-lg) -->
-        <div class="p-px rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 shadow-lg shadow-cyan-500/10 dark:shadow-teal-500/10">
+        <!-- Enhanced Text Content Container (Original Layout Re-applied) -->
+        <div class="p-px rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 shadow-xl shadow-cyan-500/15 dark:shadow-teal-500/15">
             <!-- Inner container uses responsive grid with professional, tighter padding -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-200 dark:divide-gray-700 p-6 lg:p-8 bg-gray-50 dark:bg-gray-800 rounded-xl h-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-300 dark:divide-gray-700 p-5 lg:p-6 bg-gray-50 dark:bg-gray-800 rounded-xl h-full">
 
                 <!-- Left Column: Commitment and Local Focus -->
-                <div class="space-y-3 lg:pr-6 pb-4 lg:pb-0">
-                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                <div class="space-y-4 lg:pr-6 pb-4 lg:pb-0">
+                    <h3 class="text-xl font-bold text-teal-600 dark:text-teal-400">Commitment & Local Focus</h3>
+                    <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                         Awar Group Companies is committed to delivering excellence in every project. Situated in the
                         Washington Metropolitan area, where the vibrant culture meets historical landmarks, we understand
                         the unique needs of the local community.
                     </p>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                        Our approach emphasizes <strong>customer satisfaction</strong> and <strong>innovative solutions</strong>,
+                    <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                        Our approach emphasizes **customer satisfaction** and **innovative solutions**,
                         ensuring your project is completed efficiently and effectively.
                     </p>
                 </div>
 
                 <!-- Right Column: Integrity and Relationship Focus -->
-                <div class="space-y-3 lg:pl-6 pt-4 lg:pt-0">
-                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed font-semibold">
+                <div class="space-y-4 lg:pl-6 pt-4 lg:pt-0">
+                    <h3 class="text-xl font-bold text-cyan-600 dark:text-cyan-400">Integrity & Lasting Relationships</h3>
+                    <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed font-semibold">
                         We believe in building long-lasting relationships with our clients by providing services that
-                        <strong>exceed expectations</strong>.
+                        **exceed expectations**.
                     </p>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                         Our dedication to quality and integrity is reflected in every aspect of our work, building
                         the trust necessary for every successful project foundation.
                     </p>
@@ -43,9 +45,9 @@
             </div>
         </div>
 
-        <!-- Prominent CTA Button: Tighter margin and reduced size for professionalism -->
+        <!-- Prominent CTA Button: Tighter margin -->
         <div class="mt-8 text-center">
-            <p class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            <p class="text-base font-semibold text-gray-900 dark:text-white mb-3">
                 Discover the difference our commitment can make for your next project.
             </p>
             <a href="tel:7572871737"

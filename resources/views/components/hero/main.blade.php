@@ -15,7 +15,7 @@
         </p>
 
         <div class="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <a href="#" class="group relative inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-cyan-600 to-teal-600 rounded-lg overflow-hidden shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-[1.02]">
+            <a wire:navigate href="{{ route('contact') }}" class="group relative inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-cyan-600 to-teal-600 rounded-lg overflow-hidden shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-[1.02]">
                 <span class="relative z-10 flex items-center">
                     Talk With Us Now
                     <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,7 +25,7 @@
                 <div class="absolute inset-0 bg-gradient-to-r from-cyan-700 to-teal-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
 
-            <a href="#" class="group inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-lg border-2 border-white/20 backdrop-blur-sm bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:scale-[1.02]">
+            <a wire:navigate href="{{ route('services') }}" class="group inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-lg border-2 border-white/20 backdrop-blur-sm bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:scale-[1.02]">
                 Explore Services
                 <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
