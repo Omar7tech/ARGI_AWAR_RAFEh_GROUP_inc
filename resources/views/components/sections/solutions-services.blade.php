@@ -1,4 +1,4 @@
-@props(['ourWorks'])
+@props(['ourWorks', 'services'])
 <section class="py-5 md:py-10 bg-white dark:bg-gray-900 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
@@ -31,156 +31,25 @@
                     </div>
 
                     <div class="grid grid-cols-2 gap-3">
-                        <!-- Service Items - Dynamic Loop Here -->
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
-                                    Helical Piles & Anchors
-                                </span>
-                            </div>
-                        </a>
+                        @foreach ($services as $service)
+                            <a href="{{ route('service.show' , $service) }}"
+                                class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                    <span
+                                        class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
+                                        {{ $service->name }}
+                                    </span>
+                                </div>
+                            </a>
+                        @endforeach
 
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-teal-600 dark:text-teal-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
-                                    Concrete Services
-                                </span>
-                            </div>
-                        </a>
 
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
-                                    Retaining Walls
-                                </span>
-                            </div>
-                        </a>
 
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-teal-600 dark:text-teal-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
-                                    Foundation Installations
-                                </span>
-                            </div>
-                        </a>
-
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
-                                    Pavement Solutions
-                                </span>
-                            </div>
-                        </a>
-
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-teal-600 dark:text-teal-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
-                                    Soil Stabilization
-                                </span>
-                            </div>
-                        </a>
-
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
-                                    Site Preparation
-                                </span>
-                            </div>
-                        </a>
-
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-teal-600 dark:text-teal-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
-                                    Grading & Excavation
-                                </span>
-                            </div>
-                        </a>
-
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-cyan-600 dark:text-cyan-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
-                                    Drainage Systems
-                                </span>
-                            </div>
-                        </a>
-
-                        <a href="#"
-                            class="group relative bg-white dark:bg-gray-800 rounded-lg p-3.5 border-2 border-gray-200 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-teal-600 dark:text-teal-400 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                                <span
-                                    class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
-                                    Structural Repairs
-                                </span>
-                            </div>
-                        </a>
                     </div>
                 </div>
 

@@ -22,7 +22,6 @@
         </div>
 
         @if ($ourWorks->isNotEmpty())
-            <!-- UNIFORM GRID -->
             <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach ($ourWorks as $index => $work)
                     @php

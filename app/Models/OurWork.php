@@ -18,7 +18,6 @@ class OurWork extends Model implements HasMedia
     protected static function booted(): void
     {
         static::addGlobalScope('workScope', function (Builder $builder) {
-
             $builder->orderBy('sort', 'asc')->where('active', true);
         });
     }
