@@ -5,7 +5,7 @@
         <x-nav.link url="{{ route('welcome') }}" label="Home" />
 
         <li class="relative group">
-            <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')"
+            <a wire:navigate href="{{ route('services') }}" type="button" onclick="this.nextElementSibling.classList.toggle('hidden')"
                 class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-cyan-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-cyan-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent transition-colors duration-200">
                 Services
                 <svg class="w-2.5 h-2.5 ms-2.5 transition-transform duration-200 md:group-hover:rotate-180"
@@ -13,7 +13,7 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m1 1 4 4 4-4" />
                 </svg>
-            </button>
+            </a>
 
             @php
                 $services = App\Models\Service::get();
@@ -35,7 +35,7 @@
 
                     </ul>
                     <div class="border-t border-gray-200 dark:border-gray-700 py-2">
-                        <a href="#"
+                        <a wire:navigate href="{{ route('contact') }}"
                             class="block px-4 py-2.5 text-cyan-600 hover:bg-cyan-50 dark:text-cyan-400 dark:hover:bg-cyan-900/20 transition-colors font-medium">
                             Call Us →
                         </a>

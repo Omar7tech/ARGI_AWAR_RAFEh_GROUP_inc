@@ -27,6 +27,8 @@ class ServicesTable
                     ,
                 ]),
             ])
+            ->reorderable('sort')
+            ->defaultSort('sort', 'asc')
             ->contentGrid([
                 'md' => 2,
                 'xl' => 3,
