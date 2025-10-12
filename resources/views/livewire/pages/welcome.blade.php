@@ -1,4 +1,4 @@
-<div class="">
+<div class="bg-white dark:bg-gray-900">
     <x-hero.main />
 
 

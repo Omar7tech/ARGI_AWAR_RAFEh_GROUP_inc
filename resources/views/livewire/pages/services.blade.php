@@ -38,10 +38,10 @@
                                 </h3>
                             @endif
 
-                            
-                            <a href="{{ route('service.show' , $service)  }}"
+
+                            <a wire:navigate href="{{ route('service.show' , $service)  }}"
                                 class="mt-4 w-full text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-xl shadow-lg hover:bg-blue-700 transition duration-300 transform group-hover:translate-x-0 group-hover:opacity-100">
-                                
+
                                 <span>View Service</span>
                                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

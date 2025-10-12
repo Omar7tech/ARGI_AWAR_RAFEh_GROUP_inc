@@ -1,4 +1,4 @@
-<footer class="bg-gray-50/50 dark:bg-gray-950 border-t border-gray-200/50 dark:border-gray-800 rounded-t-xl">
+<footer class="bg-gray-50/50 dark:bg-gray-950 border-t border-gray-200/50 dark:border-gray-800 ">
     <div class="container mx-auto px-4 max-w-7xl pt-8 pb-4">
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-6 lg:gap-8 mb-8">
             <div class="col-span-2 lg:col-span-2 space-y-4">

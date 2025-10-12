@@ -1,4 +1,4 @@
-<section class="relative py-2 transition-colors duration-300">
+<section class="relative py-2 transition-colors duration-300 bg-white dark:bg-gray-900">
     <!-- Soft Diagonal Cross Grid Left Fade Background -->
     <div class="absolute inset-0 pointer-events-none hidden sm:block"
         style="

@@ -53,12 +53,12 @@
                         </h2>
 
                         <div class="flex flex-col gap-3">
-                            <a href="{{ route('contact') }}"
+                            <a wire:navigate href="{{ route('contact') }}"
                                class="inline-flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-cyan-600 to-teal-600 text-white text-base font-bold rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                                 Contact Us
                             </a>
-                             <a href="{{ route('contact') }}"
+                             <a wire:navigate href="{{ route('contact') }}"
                                class="inline-flex items-center justify-center gap-2 px-4 py-3 bg-transparent text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-700 text-base font-semibold rounded-lg hover:border-teal-500 transition-all duration-300">
                                 <svg class="w-5 h-5 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                                 Go to Contact Page
@@ -166,12 +166,12 @@
                 @endif
 
                 <div class="flex flex-col gap-3">
-                    <a href="{{ route('contact') }}"
+                    <a wire:navigate href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-600 text-white text-base font-bold rounded-lg shadow-md">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                         Contact Us
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a wire:navigate href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 text-base font-semibold rounded-lg hover:border-cyan-500 transition-all duration-300">
                         <svg class="w-5 h-5 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                         Go to Contact Page
