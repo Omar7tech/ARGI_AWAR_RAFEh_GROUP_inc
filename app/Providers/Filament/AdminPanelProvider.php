@@ -36,7 +36,7 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Cyan,
             ])
             ->unsavedChangesAlerts()
-            ->login()
+            /* ->login() */
             ->colors([
                 'primary' => Color::Amber,
             ])
@@ -60,9 +60,9 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
-            ])
-            ->authMiddleware([
-                Authenticate::class,
             ]);
+            /* ->authMiddleware([
+                Authenticate::class,
+            ]); */
     }
 }

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     @php
-        $defaultDescription = "Awar Rafeh Group specializes in high-quality construction, engineering, and project management services. Contact us for building and infrastructure solutions in your area.";
+        $defaultDescription =
+            'Awar Rafeh Group specializes in high-quality construction, engineering, and project management services. Contact us for building and infrastructure solutions in your area.';
         $currentUrl = request()->url();
         $siteName = 'Awar Rafeh Group';
     @endphp
@@ -46,10 +47,19 @@
 </head>
 
 <body class="bg-white  dark:bg-gray-900">
-    <x-nav.main />
-    <div class="min-h-screen">
-        {{ $slot }}
-    </div>
+    @php
+        $generalSettings = app(\App\Settings\GeneralSettings::class);
+    @endphp
+
+    @if ($generalSettings->site_active)
+        <x-nav.main />
+        <div class="min-h-screen">
+            {{ $slot }}
+        </div>
+    @else
+    <x-maintenance.main />
+    @endif
+
     <x-footer.main />
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>

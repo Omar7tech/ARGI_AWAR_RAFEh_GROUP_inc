@@ -19,7 +19,7 @@
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-3">
                 The
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600 dark:from-cyan-400 dark:to-teal-400">
-                    Awar Group
+                    Awar Rafeh Group
                 </span>
                 Advantage
             </h2>

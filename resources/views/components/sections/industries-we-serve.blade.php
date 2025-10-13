@@ -1,3 +1,4 @@
+@props(['industries'])
 <section class="relative py-12 md:py-16 overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300">
     <div class="container relative mx-auto px-4 max-w-6xl">
         <div class="text-center mb-10">
