@@ -28,7 +28,7 @@
                     @foreach ($contactSettings->social_media as $s)
                         <a href="{{ $s['url'] }}" target="_blank" rel="noopener noreferrer"
                             class="group relative w-11 h-11 bg-white dark:bg-gray-800 rounded-full border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-400 dark:hover:border-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 hover:-translate-y-1 flex items-center justify-center overflow-hidden">
-                            <img class="w-6 h-6 object-contain transition-transform duration-300 group-hover:scale-110"
+                            <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                                 src="{{ $s['icon_url'] }}"
                                 alt="{{ $s['platform'] ?? 'Social Media' }}">
                             <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>

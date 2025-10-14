@@ -49,18 +49,22 @@
 <body class="bg-white  dark:bg-gray-900">
     @php
         $generalSettings = app(\App\Settings\GeneralSettings::class);
+        $contactSettings = app(\App\Settings\ContactSettings::class);
     @endphp
 
     @if ($generalSettings->site_active)
         <x-nav.main />
+
         <div class="min-h-screen">
             {{ $slot }}
         </div>
     @else
-    <x-maintenance.main />
+        <x-maintenance.main />
     @endif
-
-    <x-footer.main />
+    @if ($contactSettings->emails || $contactSettings->phone_numbers)
+        <x-dial.main :$contactSettings />
+    @endif
+    <x-footer.main :$contactSettings />
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
