@@ -16,10 +16,9 @@ class ServiceForm
         return $schema
             ->components([
                 SpatieMediaLibraryFileUpload::make('image')
-                    ->label('Upload Images')
+                    ->label('Upload Image')
                     ->disk('public')
                     ->visibility('public')
-                    ->directory('ourworks')
                     ->image()
                     ->downloadable()
                     ->openable()

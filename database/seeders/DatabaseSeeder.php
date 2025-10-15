@@ -21,10 +21,10 @@ class DatabaseSeeder extends Seeder
             'password' => 'Argi7Argi'
         ]);
 
-        $this->call([
+        /* $this->call([
             OurWorkSeeder::class,
             ServiceSeeder::class,
             IndustriesWeServeSeeder::class
-        ]);
+        ]); */
     }
 }
