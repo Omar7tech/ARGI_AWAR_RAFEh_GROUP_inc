@@ -15,7 +15,7 @@ class Welcome extends Component
     {
         $ourWorks = OurWorkModel::with('media')->get();
         $services = Service::with('media')->limit(10)->get();
-        $industries = IndustriesWeServe::get();
+        $industries = IndustriesWeServe::orderBy('sort' , 'asc')->get();
 
         return view('livewire.pages.welcome' , compact('ourWorks' , 'services' , 'industries'));
     }

@@ -5,18 +5,23 @@
              style="background-image: url('{{ asset('images/hero.jpg') }}');">
         </div>
     </div>
-
     <div class="relative z-10 px-4 mx-auto max-w-screen-lg text-center py-16 lg:py-20">
+        <!-- Logo with glow effect -->
+        <div class="mb-8 flex justify-center">
+            <div class="relative group">
+                <img src="{{ asset('icons/logo-cropped-nobg.PNG') }}" alt="Company Logo" class="w-full h-26  md:h-32 relative z-10 drop-shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                <!-- Glow effect -->
+                <div class="absolute inset-0 bg-cyan-500/40 blur-2xl rounded-full scale-75 group-hover:scale-90 transition-transform duration-300"></div>
+            </div>
+        </div>
 
         <h1 class="mb-5 text-4xl font-extrabold tracking-tight leading-tight text-white md:text-5xl lg:text-6xl">
             We Achieve Stability with
             <span class="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Expert Solutions</span>
         </h1>
-
         <p class="mb-8 text-base font-bold text-gray-300 lg:text-lg sm:px-8 lg:px-24 leading-relaxed">
             Hire Group Companies in the Washington metropolitan area
         </p>
-
         <div class="flex flex-col gap-3 sm:flex-row sm:justify-center">
             <a wire:navigate href="{{ route('contact') }}" class="group relative inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-cyan-600 to-teal-600 rounded-lg overflow-hidden shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-[1.02]">
                 <span class="relative z-10 flex items-center">
@@ -27,7 +32,6 @@
                 </span>
                 <div class="absolute inset-0 bg-gradient-to-r from-cyan-700 to-teal-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
-
             <a wire:navigate href="{{ route('services') }}" class="group inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-lg border-2 border-white/20 backdrop-blur-sm bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:scale-[1.02]">
                 Explore Services
                 <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

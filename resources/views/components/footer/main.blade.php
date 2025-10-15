@@ -213,15 +213,13 @@
             </div>
         @endif
 
-        <!-- Bottom Bar with Style adjusted for Light Mode default -->
         <div class="pt-8 pb-4">
             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                <!-- Copyright -->
                 <div class="flex flex-col sm:flex-row items-center gap-2 text-sm text-center lg:text-left">
                     <span class="text-gray-600 dark:text-gray-500">© 2025</span>
                     <a href="#"
                         class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 hover:from-teal-500 hover:to-cyan-500 dark:hover:from-teal-300 dark:hover:to-cyan-300 transition-all">
-                        Awar Rafeh Group 
+                        Awar Rafeh Group
                     </a>
                     <span class="hidden sm:inline text-gray-400 dark:text-gray-700">•</span>
                     <span class="text-gray-600 dark:text-gray-500">All Rights Reserved</span>

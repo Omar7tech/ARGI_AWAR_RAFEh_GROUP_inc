@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="bg-white dark:bg-gray-900">
+<html lang="en" class="bg-white dark:bg-gray-900">
 
 <head>
     <meta charset="utf-8">
@@ -12,9 +12,15 @@
         $siteName = 'Awar Rafeh Group';
     @endphp
     <title>{{ $title ?? 'Awar Rafeh Group | Construction & Engineering Excellence' }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 
     <meta name="description" content="@yield('meta_description', $defaultDescription)">
     <link rel="canonical" href="{{ $canonical ?? $currentUrl }}">
+
+    <meta name="keywords"
+        content="Awar Rafeh Group, engineering, construction, architecture, infrastructure, general contracting, building design, renovation, project management, MEP services">
+    <meta name="author" content="Awar Rafeh Group">
 
     <meta property="og:title" content="{{ $title ?? $siteName }}">
     <meta property="og:description" content="@yield('meta_description', $defaultDescription)">
@@ -37,12 +43,26 @@
 
 
 
-    <!-- Base Styles and Assets -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('head')
+    @php
+        $organizationSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Organization',
+            'name' => 'Awar Rafeh Group Inc.',
+            'url' => url('/'),
+            'logo' => asset('images/logo.png'),
+            'sameAs' => ['https://www.facebook.com/awarrafehgroup', 'https://www.linkedin.com/company/awarrafehgroup'],
+        ];
+    @endphp
+
+    <script type="application/ld+json">
+    {!! json_encode($organizationSchema, JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT) !!}
+</script>
+
 </head>
 
 <body class="bg-white  dark:bg-gray-900">

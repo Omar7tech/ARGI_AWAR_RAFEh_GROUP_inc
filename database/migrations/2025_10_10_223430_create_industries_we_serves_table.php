@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('industries_we_serves', function (Blueprint $table) {
             $table->id();
+            $table->integer('sort')->default(0);
             $table->string('name');
             $table->string('description');
             $table->timestamps();

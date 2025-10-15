@@ -26,7 +26,7 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('admin')
+            ->path('admin-secret-omar7tech')
             ->profile()
             ->spa()
             ->brandLogo(asset('icons/logo-cropped-nobg.PNG'))
@@ -37,7 +37,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->unsavedChangesAlerts()
             ->login()
-            
+
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
@@ -46,8 +46,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 AccountWidget::class,
-                FilamentInfoWidget::class,
-            ])
+            ])->globalSearch(false)
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
