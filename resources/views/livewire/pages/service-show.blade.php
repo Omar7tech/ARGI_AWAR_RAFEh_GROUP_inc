@@ -1,6 +1,5 @@
 <section class="py-10 bg-gray-50 dark:bg-gray-950 font-inter min-h-screen">
     <div class="container mx-auto px-4 md:px-20">
-
         @if ($service->getFirstMediaUrl())
             <div class="hidden lg:grid lg:grid-cols-12 lg:gap-8">
 
@@ -80,9 +79,7 @@
                         </div>
 
                         @if ($service->description)
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                                Details
-                            </h3>
+
                             <article class="prose max-w-none dark:prose-invert prose-base
                                             prose-headings:text-cyan-600 prose-headings:dark:text-cyan-400
                                             prose-blockquote:border-teal-500 prose-blockquote:bg-teal-50 prose-blockquote:dark:bg-gray-800/60
@@ -120,9 +117,7 @@
 
                 @if ($service->description)
                     <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-gray-200 dark:border-gray-700">
-                        <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4 border-b pb-2 border-gray-200 dark:border-gray-700">
-                            Details
-                        </h2>
+
 
                         <article class="prose max-w-none dark:prose-invert prose-sm
                                          prose-headings:text-cyan-600 prose-headings:dark:text-cyan-400

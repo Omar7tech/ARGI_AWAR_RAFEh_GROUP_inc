@@ -9,6 +9,8 @@ use Livewire\Component;
 class OurWork extends Component
 {
     #[Title('Projects | Awar Rafeh Group')]
+
+    
     public function render()
     {
         $ourWorks = OurWorkModel::with('media')->get();

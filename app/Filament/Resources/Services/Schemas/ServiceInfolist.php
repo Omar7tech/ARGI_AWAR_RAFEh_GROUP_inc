@@ -12,15 +12,14 @@ class ServiceInfolist
     {
         return $schema
             ->components([
-                TextEntry::make('slug'),
+
                 TextEntry::make('name'),
                 IconEntry::make('active')
                     ->boolean(),
-                TextEntry::make('sort')
-                    ->numeric(),
+
                 TextEntry::make('description')
                     ->placeholder('-')
-                    ->columnSpanFull(),
+                    ->columnSpanFull()->markdown(),
                 TextEntry::make('created_at')
                     ->dateTime()
                     ->placeholder('-'),

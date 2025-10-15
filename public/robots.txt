@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://awarrafehgroup.com/sitemap.xml

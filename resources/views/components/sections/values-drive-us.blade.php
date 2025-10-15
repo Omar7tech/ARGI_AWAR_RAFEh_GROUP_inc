@@ -1,7 +1,7 @@
 <section class="relative py-12 md:py-16 overflow-hidden values-section">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-gray-900/90 to-gray-800/95"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900/85 via-gray-900/80 to-gray-800/85"></div>
     </div>
 
     <!-- Subtle Grid Pattern -->
@@ -38,7 +38,7 @@
                     </div>
                     <div class="space-y-3 text-sm text-gray-300 leading-relaxed">
                         <p>
-                            Awar Group Companies is committed to delivering excellence in every project. Situated in the
+                            Awar Rafeh Group Companies is committed to delivering excellence in every project. Situated in the
                             Washington Metropolitan area, where the vibrant culture meets historical landmarks, we understand
                             the unique needs of the local community.
                         </p>
@@ -73,23 +73,6 @@
 
             </div>
         </div>
-
-        <!-- Compact CTA -->
-        <div class="mt-8 text-center">
-            <p class="text-sm font-medium text-gray-300 mb-3">
-                Discover the difference our commitment can make for your next project.
-            </p>
-            <a href="tel:7572871737"
-                class="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold text-white
-                        bg-gradient-to-r from-teal-600 to-cyan-600 rounded-lg shadow-lg shadow-teal-500/30
-                        hover:shadow-xl hover:shadow-teal-500/40 transition-all duration-300">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.772-1.548a1 1 0 011.06-.54l4.435.74A1 1 0 0118 16.847V17a1 1 0 01-1 1h-2C7.22 18 2 12.78 2 6V3z"></path>
-                </svg>
-                Call Us Today: (757) 287-1737
-            </a>
-        </div>
-
     </div>
 
     <style>
@@ -100,11 +83,11 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1519634093379-625390ebebc7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-image: url('{{ asset('images/values2.jpg') }}');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            
+
             z-index: 0;
         }
 

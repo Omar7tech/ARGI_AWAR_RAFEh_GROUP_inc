@@ -1,6 +1,9 @@
 <section class="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-black via-black to-black">
-        <div class="absolute inset-0 bg-[url('https://static.investindia.gov.in/s3fs-public/2024-12/consw.png')] bg-cover bg-center opacity-30"></div>
+        <!-- Background image using inline style -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-30"
+             style="background-image: url('{{ asset('images/hero.jpg') }}');">
+        </div>
     </div>
 
     <div class="relative z-10 px-4 mx-auto max-w-screen-lg text-center py-16 lg:py-20">
@@ -10,8 +13,8 @@
             <span class="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Expert Solutions</span>
         </h1>
 
-        <p class="mb-8 text-base font-normal text-gray-300 lg:text-lg sm:px-8 lg:px-24 leading-relaxed">
-            Serving the Washington metropolitan area with innovative engineering solutions for helical piles, concrete, and retaining walls.
+        <p class="mb-8 text-base font-bold text-gray-300 lg:text-lg sm:px-8 lg:px-24 leading-relaxed">
+            Hire Group Companies in the Washington metropolitan area
         </p>
 
         <div class="flex flex-col gap-3 sm:flex-row sm:justify-center">

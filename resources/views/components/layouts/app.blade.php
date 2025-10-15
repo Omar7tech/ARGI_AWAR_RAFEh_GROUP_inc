@@ -13,11 +13,11 @@
     @endphp
     <title>{{ $title ?? 'Awar Rafeh Group | Construction & Engineering Excellence' }}</title>
 
-    <meta name="description" content="{{ $description ?? $defaultDescription }}">
+    <meta name="description" content="@yield('meta_description', $defaultDescription)">
     <link rel="canonical" href="{{ $canonical ?? $currentUrl }}">
 
     <meta property="og:title" content="{{ $title ?? $siteName }}">
-    <meta property="og:description" content="{{ $description ?? $defaultDescription }}">
+    <meta property="og:description" content="@yield('meta_description', $defaultDescription)">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ $currentUrl }}">
     <meta property="og:site_name" content="{{ $siteName }}">
@@ -26,9 +26,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@AwarRafehGroup">
     <meta name="twitter:title" content="{{ $title ?? $siteName }}">
-    <meta name="twitter:description" content="{{ $description ?? $defaultDescription }}">
+    <meta name="twitter:description" content="@yield('meta_description', $defaultDescription)">
     <meta name="twitter:image" content="{{ asset('icons/logo.png') }}">
-
 
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.png') }}">
@@ -43,7 +42,7 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    @stack('head')
 </head>
 
 <body class="bg-white  dark:bg-gray-900">

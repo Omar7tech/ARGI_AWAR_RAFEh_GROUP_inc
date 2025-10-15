@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+    <loc>http://127.0.0.1:8000</loc>
+    <priority>1.0</priority>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/about</loc>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/contact</loc>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/services</loc>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/our-work</loc>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/privacy-policy</loc>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/terms-and-conditions</loc>
+            </url>
+    <url>
+    <loc>http://127.0.0.1:8000/service/helical-piles-anchors</loc>
+    <lastmod>2025-10-14T13:56:30+00:00</lastmod>
+    <image:image>
+    <image:loc>http://127.0.0.1:8000/storage/1/01K7HFAQZKJW5M3GG83PQBFZFQ.webp</image:loc>
+    <image:caption>Helical Piles &amp; Anchors</image:caption>
+    <image:geo_location>Helical Piles &amp; Anchors</image:geo_location>
+</image:image>
+        </url>
+    <url>
+    <loc>http://127.0.0.1:8000/service/concrete</loc>
+    <lastmod>2025-10-14T23:49:31+00:00</lastmod>
+    <image:image>
+    <image:loc>http://127.0.0.1:8000/storage/2/01K7HFX7A5RJNN6P97KQJ55VPC.webp</image:loc>
+    <image:caption>Concrete</image:caption>
+    <image:geo_location>Concrete</image:geo_location>
+</image:image>
+        </url>
+</urlset>

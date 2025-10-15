@@ -1,7 +1,9 @@
 <section class="relative py-16 md:py-20 lg:py-24 overflow-hidden parallax-section">
     <!-- Animated Grid Overlay -->
     <div class="absolute inset-0 opacity-5 pointer-events-none z-0">
-        <div class="absolute inset-0" style="background-image: linear-gradient(rgba(6, 182, 212, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.5) 1px, transparent 1px); background-size: 60px 60px;"></div>
+        <div class="absolute inset-0"
+            style="background-image: linear-gradient(rgba(6, 182, 212, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.5) 1px, transparent 1px); background-size: 60px 60px;">
+        </div>
     </div>
 
     <!-- Content -->
@@ -32,7 +34,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('{{ asset('images/parallax-con.jpg') }}');
+            background-image: url('https://lirp.cdn-website.com/23d1995d/dms3rep/multi/opt/1-1920w-1920w.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;

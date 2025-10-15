@@ -120,9 +120,27 @@ class ManageContact extends SettingsPage
                                     ->columnSpan('full'),
                             ]),
 
+                        Tab::make('Locations')
+                            ->icon('heroicon-o-map-pin')
+                            ->schema([
+                                Repeater::make('locations')
+                                    ->schema([
+                                        TextInput::make('name')
+                                            ->label('Location Name / Attribute')
+                                            ->required()
+                                            ->maxLength(150)
+                                            ->columnSpan('full'),
+                                    ])
+                                    ->addActionLabel('Add Location')
+                                    ->reorderableWithButtons()
+                                    ->collapsible()
+                                    ->columns(1)
+                                    ->columnSpan('full'),
+                            ]),
+
                     ])
                     ->columnSpan('full')
-                    ,
+                ,
             ]);
     }
 }
